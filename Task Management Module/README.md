@@ -58,4 +58,3 @@ The solution provides a centralized way to manage workloads, deadlines, and resp
 ## 🔗 Notes
 This repository includes **documentation, diagrams, and screenshots only**.  
 Source code and sensitive SMEEM platform data are excluded due to confidentiality.
-The UI screenshot has been **blurred intentionally** to protect sensitive information while preserving layout and structure.
