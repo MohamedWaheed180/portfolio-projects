@@ -38,7 +38,6 @@ Built using **SQL** and **Power BI**, the dashboard provides real-time insights 
 
 ## 🖼️ Dashboard
 ![Dashboard Screenshot](regulation-dashboard-ui.png)  
-*Sample dashboard screenshot placeholder (replace with your own).*
 
 ---
 
