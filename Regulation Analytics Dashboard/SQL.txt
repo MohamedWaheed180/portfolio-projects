@@ -1,0 +1,70 @@
+SELECT 
+    t1.Col_1,
+    Func_1(t1.Col_2) AS Name_Alpha,
+    Func_2(t1.Col_3) AS Date_Alpha,
+    t1.Col_4,
+    t5.Col_5,
+    CASE 
+        WHEN t4.Col_6 IS NULL THEN 'NO' 
+        ELSE 'YES' 
+    END AS Category_A,
+    CASE 
+        WHEN t8.Col_6 IS NULL THEN 'NotFound_A'
+    END AS NotFound_A,
+    CASE 
+        WHEN t7.Col_1 = t1.Col_1 THEN 'Flag_A'
+    END AS Strategic_Flag,
+    t6.Col_7,
+    MAX(CASE WHEN t2.Col_8 = 1 THEN t2.Col_9 END) AS REG1,
+    MAX(CASE WHEN t2.Col_8 = 2 THEN t2.Col_9 END) AS REG2,
+    MAX(CASE WHEN t2.Col_8 = 3 THEN t2.Col_9 END) AS REG3,
+    MAX(CASE WHEN t2.Col_8 = 4 THEN t2.Col_9 END) AS REG4,
+    MAX(CASE WHEN t2.Col_8 = 5 THEN t2.Col_9 END) AS REG5,
+    MAX(CASE WHEN t2.Col_8 = 6 THEN t2.Col_9 END) AS REG6,
+    MAX(CASE WHEN t2.Col_8 = 10 THEN t2.Col_9 END) AS REG10,
+    MAX(CASE WHEN t2.Col_8 = 8 THEN t2.Col_9 END) AS REG8,
+    MAX(CASE WHEN t2.Col_8 = 9 THEN t2.Col_9 END) AS REG9,
+    MAX(CASE WHEN t2.Col_8 = 12 THEN t2.Col_9 END) AS REG12,
+    MAX(CASE WHEN t2.Col_8 = 13 THEN t2.Col_9 END) AS REG13,
+    MAX(CASE WHEN t2.Col_8 = 14 THEN t2.Col_9 END) AS REG14,
+    MAX(CASE WHEN t2.Col_8 = 16 THEN t2.Col_9 END) AS REG16,
+    MAX(CASE WHEN t2.Col_8 = 17 THEN t2.Col_9 END) AS REG17,
+    MAX(CASE WHEN t2.Col_8 = 18 THEN t2.Col_9 END) AS REG18,
+    MAX(CASE WHEN t2.Col_8 = 20 THEN t2.Col_9 END) AS REG20,
+    MAX(CASE WHEN t2.Col_8 = 19 THEN t2.Col_9 END) AS REG19,
+    MAX(CASE WHEN t2.Col_8 = 22 THEN t2.Col_9 END) AS REG22,
+    MAX(CASE WHEN t2.Col_8 = 21 THEN t2.Col_9 END) AS REG21,
+    MAX(CASE WHEN t2.Col_8 = 30 THEN t2.Col_9 END) AS REG30,
+    MAX(CASE WHEN t2.Col_8 = 31 THEN t2.Col_9 END) AS REG31,
+    MAX(CASE WHEN t2.Col_8 = 33 THEN t2.Col_9 END) AS REG33,
+    MAX(CASE WHEN t2.Col_8 = 28 THEN t2.Col_9 END) AS REG28,
+    MAX(CASE WHEN t2.Col_8 = 29 THEN t2.Col_9 END) AS REG29,
+    MAX(CASE WHEN t2.Col_8 = 32 THEN t2.Col_9 END) AS REG32
+FROM 
+    Schema1.Table_1 t1 
+LEFT JOIN 
+    Schema1.Table_2 t2 ON t2.Col_1 = t1.Col_1 
+LEFT JOIN 
+    Schema1.Table_3 t3 ON t3.Col_8 = t2.Col_8 
+LEFT JOIN 
+    Schema1.Table_4 t4 ON t4.Col_1 = t1.Col_1 
+LEFT JOIN 
+    Schema1.Table_6 t6 ON t6.Col_1 = t1.Col_1 
+LEFT JOIN 
+    Schema1.Table_5 t5 ON t5.Col_4 = t1.Col_4
+LEFT JOIN 
+    Schema2.Table_7 t7 ON t7.Col_1 = t1.Col_1
+LEFT JOIN 
+    Schema3.Table_8 t8 ON t8.Col_1 = t1.Col_1
+WHERE 
+    Func_2(t1.Col_3) >= TO_DATE('01-JAN-2025', 'DD-MON-YY')
+GROUP BY 
+    t1.Col_1,
+    Func_1(t1.Col_2),
+    Func_2(t1.Col_3),
+    t1.Col_4,
+    t5.Col_5,
+    t4.Col_6,
+    t8.Col_6,
+    t7.Col_1,
+    t6.Col_7;
