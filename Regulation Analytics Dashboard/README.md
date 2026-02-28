@@ -32,7 +32,7 @@ Built using **SQL** and **Power BI**, the dashboard provides real-time insights 
 ---
 
 ## 📊 Workflow Diagram
-![Workflow Diagram](assets/regulation-dashboard-workflow.png)
+![Workflow Diagram](regulation-dashboard-workflow.png)
 
 ---
 
