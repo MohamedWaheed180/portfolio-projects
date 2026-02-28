@@ -1,4 +1,4 @@
-# Strategic AI Chatbot – SMeem Platform
+# Strategic AI Chatbot – SMEEM Platform
 
 ## 📌 Overview
 An AI-powered chatbot designed to act as a **strategic analyst**, capable of processing organizational data (strategic plans, initiatives, programs, and projects) and delivering **summaries, risk assessments, and actionable recommendations**.  
@@ -28,7 +28,7 @@ The chatbot leverages **Retrieval-Augmented Generation (RAG)** combined with **v
 - **Vector Embeddings**: Store processed data for semantic search and similarity matching.
 - **AI Layer**: RAG pipeline integrates retrieved knowledge with generative AI outputs.
 - - Multi-language support (English & Arabic).
-- **Deployment**: Integrated into the SMeem platform for organizational use.
+- **Deployment**: Integrated into the SMEEM platform for organizational use.
 
 ---
 
@@ -36,7 +36,7 @@ The chatbot leverages **Retrieval-Augmented Generation (RAG)** combined with **v
 - **Languages & Frameworks**: C#, SQL, Angular
 - **AI/ML**: NLP, RAG, Vector Embeddings
 - **Databases**: Enterprise SQL Server
-- **Platform**: SMeem (internal organizational platform)
+- **Platform**: SMEEM (internal organizational platform)
 
 ---
 
