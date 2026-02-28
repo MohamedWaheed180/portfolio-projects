@@ -39,7 +39,10 @@ It extracts and analyzes data from SQL databases using Python, then formulates c
 - Scalable framework for broader ticket automation initiatives.
 
 ---
+## 📊 Workflow Diagram
+![Workflow Diagram](queryguard-workflow.png)
 
+---
 ## 📄 Future Enhancements
 - Add NLP for smarter query generation.  
 - Integrate with CRM platforms (e.g., Zendesk, Salesforce).  
