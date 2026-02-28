@@ -41,7 +41,7 @@ The chatbot leverages **Retrieval-Augmented Generation (RAG)** combined with **v
 ---
 
 ## 📊 Workflow Diagram
-![Workflow Diagram](<img width="1552" height="675" alt="workflow" src="https://github.com/user-attachments/assets/736f24b6-2db2-4524-a961-9039d77a1452" />)
+![Workflow Diagram](workflow.png)
 
 ---
 
