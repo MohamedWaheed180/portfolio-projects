@@ -49,6 +49,5 @@ It extracts and analyzes data from SQL databases using Python, then formulates c
 ---
 
 ## 🔗 Notes
-This repository includes **Python scripts**, **SQL query samples**, and **documentation**.  
-GUI screenshots and sample outputs are included.  
+This repository includes **documentation**.   
 Source data is excluded due to confidentiality.
