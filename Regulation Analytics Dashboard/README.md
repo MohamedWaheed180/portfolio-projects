@@ -1,4 +1,4 @@
-# Regulatory Analytics Dashboard
+# Regulation Analytics Dashboard
 
 ## 📌 Overview
 An interactive analytics dashboard designed to monitor the implementation of newly added regulations across organizational workflows.  
