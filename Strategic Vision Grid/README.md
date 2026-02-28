@@ -32,7 +32,7 @@ The solution combines backend logic, stored procedures, and Angular components t
 ---
 
 ## 📊 Workflow Diagram
-![Workflow Diagram](assets/smeem-report-workflow.png)
+![Workflow Diagram](smeem-report-workflow.png)
 
 ------
 ## 📊 UI-Dashboard
@@ -59,3 +59,4 @@ The solution combines backend logic, stored procedures, and Angular components t
 ## 🔗 Notes
 This repository includes **documentation, diagrams, and screenshots only**.  
 Source code and sensitive SMEEM platform data are excluded due to confidentiality.
+The dashboard screenshot has been **blurred intentionally** to protect sensitive information while preserving layout and structure.
