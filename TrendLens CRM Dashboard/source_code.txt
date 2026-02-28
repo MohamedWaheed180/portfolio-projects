@@ -1,0 +1,47 @@
+import cx_Oracle
+import pandas as pd
+import os
+
+
+DB_USER = os.getenv('DB_USER', 'ANON_USER')
+DB_PASS = os.getenv('DB_PASS', 'ANON_PASSWORD')
+DB_HOST = os.getenv('DB_HOST', 'db.placeholder.com')
+DB_PORT = os.getenv('DB_PORT', '1521')
+DB_SERVICE = os.getenv('DB_SERVICE', 'SERVICE_NAME')
+
+# --- 2. Database Connection ---
+dsn = cx_Oracle.makedsn(DB_HOST, DB_PORT, service_name=DB_SERVICE)
+connection = cx_Oracle.connect(DB_USER, DB_PASS, dsn)
+cur = connection.cursor()
+
+try:
+    
+    
+    sql_query_general = """
+    SELECT 
+        ATTR_ID, ATTR_DATE, ASSIGNED_TS, CATEGORY_TYPE, REQ_TYPE, 
+        UPDATE_TS, DEPT_NAME, RECORD_STATUS, RESOLVED_TS, ORG_NAME, 
+        USER_NAME, SUPPLIER_STATUS, DATA_ISSUE_FLAG, DEPT_GROUP, 
+        SUBJECT_TEXT, CONTACT_REQUIRED 
+    FROM SCHEMA_NAME.SOURCE_TABLE
+    """
+    cur.execute(sql_query_general)
+    df2 = pd.DataFrame(cur.fetchall(), columns=[desc[0] for desc in cur.description])
+
+    
+    sql_query_filtered = """
+    SELECT 
+        ATTR_ID, DEPT_GROUP, RECORD_STATUS, SUBJECT_TEXT 
+    FROM SCHEMA_NAME.SOURCE_TABLE
+    WHERE DEPT_GROUP IN ('GROUP_A', 'GROUP_B')
+    AND RECORD_STATUS NOT IN ('VAL_1', 'VAL_2', 'VAL_3', 'VAL_4')
+    """
+    cur.execute(sql_query_filtered)
+    df3 = pd.DataFrame(cur.fetchall(), columns=[desc[0] for desc in cur.description])
+
+    
+
+finally:
+    # Ensuring the cursor and connection close even if an error occurs
+    cur.close()
+    connection.close()
