@@ -37,7 +37,7 @@ The dashboard helps product teams and customer success managers understand what 
 
 ---
 
-## 🖼️ Screenshots
+## 📊 Dashboard
 ![Dashboard Screenshot](trendlens-crm-ui.png)  
 
 ---
