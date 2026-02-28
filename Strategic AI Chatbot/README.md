@@ -45,7 +45,7 @@ The chatbot leverages **Retrieval-Augmented Generation (RAG)** combined with **v
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️ Chatbot Interface
 ![Chatbot Interface](UI-ChatBot.png)  
 
 ---
