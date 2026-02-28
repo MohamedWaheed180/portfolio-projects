@@ -34,7 +34,7 @@ It empowers executives and stakeholders with instant, tailored presentations and
 ---
 
 ## 📊 Workflow Diagram
-![Workflow Diagram](assets/stratsynth-workflow.png)
+![Workflow Diagram](stratsynth-workflow.png)
 
 ---
 ## 📊 UI Design
