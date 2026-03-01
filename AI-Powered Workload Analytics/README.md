@@ -37,9 +37,7 @@ The system provides real-time visibility into task allocation, detects inefficie
 
 ---
 
----
-
-## 📊 Workflow Diagram
+## 📊 UI Design
 ![Workflow Diagram](tasklens-ui.png)
 
 ---
