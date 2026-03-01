@@ -41,7 +41,7 @@ The platform continuously reviews initiatives and projects to ensure alignment w
 
 ---
 
-## 📊 Ui Design
+## 📊 UI Design
 ![Workflow Diagram](portfoai-Ui.png)
 
 ---
