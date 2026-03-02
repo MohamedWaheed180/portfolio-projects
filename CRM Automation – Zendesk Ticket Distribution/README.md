@@ -33,7 +33,7 @@ Developed using **Python, FastAPI, and Selenium**, the system ensures faster and
 ---
 
 ## 📊 Workflow Diagram
-![Workflow Diagram](zendesk-workflow.png)
+![Workflow Diagram](ticktedtdistributeworkflow.png)
 
 ---
 
