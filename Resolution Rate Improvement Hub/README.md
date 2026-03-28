@@ -65,9 +65,6 @@ Developed using **Python, Streamlit, cx_Oracle, and Plotly**, the system empower
 ---
 
 ## 📄 Future Enhancements
-
-- Integration with Zendesk API to pull ticket age and SLA breach timestamps directly.  
-- Trend analysis charts showing resolution rate improvement week-over-week.  
 - Automated email/Slack alerts when high-priority tickets exceed SLA thresholds.  
 - AI-powered priority scoring to rank which tickets should be resolved first for maximum CSAT impact.  
 - Role-based access so individual functional groups see only their own ticket queues.
