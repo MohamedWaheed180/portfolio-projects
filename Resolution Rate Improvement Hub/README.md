@@ -42,19 +42,6 @@ Developed using **Python, Streamlit, cx_Oracle, and Plotly**, the system empower
 
 ---
 
-## 📊 Dashboard Sections
-
-| Section | Description |
-|---|---|
-| **Summary Metrics** | Total tickets, distinct parent tickets, orphan child tickets, and total closeable tickets |
-| **Tickets per Group** | Bar chart showing distribution across functional groups (RoHS, REACH, Chemical, etc.) |
-| **Tickets per Type** | Donut pie chart showing distribution by ticket type |
-| **Top 15 Organizations** | Horizontal bar chart of customers with the highest on-hold ticket counts |
-| **Raw Data Table** | Full expandable view of the cleaned dataset |
-| **Export** | Download the dataset as a TSV file for offline reporting |
-
----
-
 ## 📈 Business Value
 
 - Directly surfaces tickets ready for closure, enabling teams to **reduce hold backlog** and improve resolution rate KPIs.  
@@ -64,31 +51,16 @@ Developed using **Python, Streamlit, cx_Oracle, and Plotly**, the system empower
 - Supports **customer satisfaction improvement** by ensuring resolvable tickets are not left unnecessarily on hold.
 
 ---
+## 🗺️ Workflow Diagram
 
-## 🔄 Workflow
+![Workflow Diagram](workflow_diagram.png)
 
-```
-Oracle DB (star_grade + emailsys)
-        │
-        ▼
-  Extract on-hold tickets (since configurable start date)
-        │
-        ▼
-  Clean & remap ticket groups via MAILSYS_FUNCTION mapping
-        │
-        ▼
-  Deduplicate & filter to valid functional groups
-        │
-        ▼
-  Load into TICKET_HOLD_ANALYSIS table
-        │
-        ▼
-  Streamlit Dashboard
-  ├── Summary Metrics
-  ├── Plotly Charts (Group / Type / Organization)
-  ├── Export to TSV
-  └── Live Refresh (removes released tickets)
-```
+---
+
+## 🖥️ Dashboard Screenshots
+
+### Main Dashboard Overview
+![Dashboard Overview](dashboard_overview.png)
 
 ---
 
@@ -99,16 +71,6 @@ Oracle DB (star_grade + emailsys)
 - Automated email/Slack alerts when high-priority tickets exceed SLA thresholds.  
 - AI-powered priority scoring to rank which tickets should be resolved first for maximum CSAT impact.  
 - Role-based access so individual functional groups see only their own ticket queues.
-
----
-
-## 🗂️ Project Structure
-
-```
-├── app.py                         # Main Streamlit dashboard application
-├── README.md                      # Project documentation
-└── requirements.txt               # Python dependencies
-```
 
 ---
 
